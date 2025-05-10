@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referências avaliação</title>
+
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      height: 100dvh;
+      margin: 0;
+      padding: 0;
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2, h3 {
+      margin: 0px;
+      padding: 0px;
+    }
+    h3{
+      color: gray;
+    }
+    .grid {
+      padding: 2px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 30% 70%;
+      height: 100vh;
+      background-color: black;
+      gap: 2px;
+    }
+
+    .ref {
+      padding: 10px;
+      background-color: white;
+    }
+
+    .ref main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: calc(100% - 50px);
+
+      position: relative;
+    }
+
+    .ref-3 {
+      grid-column: span 2;
+    }
+  </style>
+
+  <style>
+    @keyframes onda {
+      0%{
+        width: 0px;
+        height: 0px;
+        opacity: 1;
+      }
+      100%{
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+      }
+    }
+
+    .wave{
+      border: 2px solid #00aeff;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      animation: onda 2s ease-in-out infinite normal both;
+    }
+
+    .delay-1{
+      animation-delay: .3s !important;
+    }
+
+    .delay-2{
+      animation-delay: .6s !important;
+    }
+  </style>
+
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="ref ref-1">
+      <header>
+        <h2>Questão 2.2</h2>
+        <h3>ref-1</h3>
+      </header>
+      
+      <main>
+        <select>
+          <option value="1">João Silva</option>
+          <option value="2">Maria Santos</option>
+          <option value="3">José Cerqueira</option>
+          <option value="4">Lurdes Santana</option>
+          <option value="5">Paulo Alves</option>
+        </select>
+      </main>
+    </div>
+    <div class="ref ref-2">
+      <header>
+        <h2>Questão 3.2</h2>
+        <h3>ref-2</h3>
+      </header>
+      
+      <main>
+        <div class="wave"></div>
+        <div class="wave delay-1"></div>
+        <div class="wave delay-2"></div>
+      </main>
+    </div>
+    <div class="ref ref-3">
+      <header>
+        <h2>Questão 6.2</h2>
+        <h3>ref-3</h3>
+      </header>
+
+      <main>
+        <img src="./image.png">
+      </main>
+    </div>
+  </div>
+</body>
+</html>
