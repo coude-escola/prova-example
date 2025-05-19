@@ -7,6 +7,8 @@ O objetivo deste desafio é o desenvolvimento de um sistema simples de Ponto de 
 O desafio é progressivo, para comtemplar cada estudante, independente da etapa do curso na qual estiver, de modo que, se o estudante está no nível 2, ele realizara o nível 1 + o nível 2, se ele está no nível 3, ele realizará o que é solicitado nos níveis 1, 2 e 3, e assim por diante.
 
 ---
+### ENTREGA: 26/05/2025
+---
 
 ## Nível 1 – PHP e SQL
 
